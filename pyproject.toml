@@ -1,0 +1,12 @@
+[tool.mypy]
+python_version = "3.12"
+strict = true
+exclude = [
+    "\\.venv",
+    "\\.ipynb_checkpoints",
+]
+
+[tool.pyright]
+include = ["basic", "intermediate"]
+exclude = ["**/.venv"]
+typeCheckingMode = "strict"
